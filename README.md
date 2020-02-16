@@ -2,9 +2,9 @@
 
 This is a collection of workload files that specify various workloads for used with the `TimeSeriesWorkload` class in YCSB.
 
-They are designed to work with an expanded version of the `TimeSeriesWorkload` class that I developed, which is currenctly available in a fork [here](https://github.com/smartygus/YCSB/blob/cassandra-time-series/core/src/main/java/site/ycsb/workloads/TimeSeriesWorkload.java).
+They are designed to work with an expanded and updated version of the `TimeSeriesWorkload` class that I developed, which is currently available in a fork of YCSB [here](https://github.com/smartygus/YCSB/blob/cassandra-time-series/core/src/main/java/site/ycsb/workloads/TimeSeriesWorkload.java).
 
-To use these workloads you will also need an adapter that implements the interface defined in the [`TimeseriesDB` class](https://github.com/smartygus/YCSB/blob/cassandra-time-series/core/src/main/java/site/ycsb/TimeseriesDB.java). I have implemented an adapter for Cassandra and ScyllaDB that can be found [here](https://github.com/smartygus/YCSB/tree/cassandra-time-series/cassandra-ts).
+To use these workloads you will also need an adapter for your time series data store that implements the interface defined in the [`TimeseriesDB` class](https://github.com/smartygus/YCSB/blob/cassandra-time-series/core/src/main/java/site/ycsb/TimeseriesDB.java). I have implemented an adapter for Cassandra and ScyllaDB that can be found [here](https://github.com/smartygus/YCSB/tree/cassandra-time-series/cassandra-ts).
 
 If you wanted to test these workloads on a Cassandra or ScyllaDB cluster of your own, you could simply build the `cassandra-ts` binding in my fork of YCSB, and use that directly.
 
